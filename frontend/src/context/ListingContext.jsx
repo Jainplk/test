@@ -254,7 +254,7 @@ export const ListingsProvider = ({ children }) => {
         setShowListing(response.data.listing)
       }
 
-      localStorage.setItem("showListing", response.data.listing.owner._id)
+      localStorage.setItem("showListing", response.data.listing.owner?._id)
     } catch (error) {
       console.error('Error fetching data:', error);
     }

@@ -1,0 +1,189 @@
+.msg-terminal {
+    flex: 2;
+    background-color: #fff2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+    /* add scrollbar */
+}
+
+.msg-terminal-heading {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.msg-terminal-heading h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 15px;
+}
+
+.msg-container {
+    padding: 20px 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.msg-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.msg-content .sender {
+    align-self: flex-end;
+    padding: 8px 18px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffcbce;
+    width: 30%;
+}
+
+.msg-content .receiver {
+    align-self: flex-start;
+    background-color: #cac9c96b;
+    padding: 8px 18px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 30%;
+}
+
+.msg-content p {
+    font-size: 16px;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.msg-input-field {
+    margin-top: auto;
+    border-top: 0.5px solid gray;
+}
+
+.msg-input-field form {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 30px;
+    gap: 20px;
+}
+
+.msg-field {
+    width: 100%;
+}
+
+.msg-field input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.msg-input-field button {
+    padding: 10px;
+    background-color: #fe424d;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.msg-input-field button i {
+    color: #fff;
+}
+
+.no-msg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-msg p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(173, 172, 172);
+}
+
+.msg-createdAt {
+    display: flex;
+    align-self: flex-end;
+    justify-content: right;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(103, 102, 102);
+}
+
+.msg-host-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+}
+
+.msg-host-header h3 {
+    text-align: center;
+}
+
+.msg-host-header .fa-bars {
+    display: none;
+    position: absolute;
+    left: 0;
+    cursor: pointer;;
+}
+
+@media screen and (max-width:992px) {
+
+    .msg-content .sender,
+    .msg-content .receiver {
+        padding: 10px;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:876px) {
+
+    .msg-content .sender,
+    .msg-content .receiver {
+        padding: 10px;
+        width: 50%;
+    }
+
+    .msg-terminal-heading {
+        padding: 0;
+    }
+
+    .msg-host-header .fa-bars {
+        display: inline-flex;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:577px) {
+    .msg-content p {
+        font-size: 14px;
+    }
+
+    .msg-content .sender,
+    .msg-content .receiver {
+        padding: 10px;
+        width: 70%;
+    }
+
+    .msg-terminal-heading h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+}

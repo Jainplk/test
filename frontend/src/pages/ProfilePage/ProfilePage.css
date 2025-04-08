@@ -1,0 +1,507 @@
+/* .profile-page{
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    gap: 50px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.profile-page-container1{
+    border: 0.3px solid #d7d5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 50px;
+}
+
+.img-container{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+.img-container .user-name-letter{
+    width: 100%;
+    background-color: cadetblue;
+    height: 100%;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.user-name-letter p{
+    font-size: 9rem;
+}
+
+.img-container .user-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.img-container .user-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.verified-info p{
+    font-size: 23px;
+    font-weight: 500;
+    color: darkcyan;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.verified-info p i{
+    color: darkcyan;
+}
+
+.account-info .docs-info {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #222;
+}
+
+.docs-info .docs-list{
+    padding: 15px 0;
+}
+
+.docs-list li{
+    font-size: 18px;
+    color: #222;
+    padding: 5px 0;
+}
+
+.docs-list li i{
+    color: darkcyan;
+    margin-right:5px ;
+}
+
+.profile-page-container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-info h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom:5px;
+}
+
+.about-info  p{
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.profile-page-container2 .info-about-user{
+    margin-top: 40px;
+}
+
+.info-about-user p {
+    white-space: pre-wrap;
+}
+
+.profile-page-container2 .buttons{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.buttons button{
+    padding: 8px 0;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttons .edit{
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: 2px solid #222;
+}
+
+.buttons .edit:hover{
+    background-color: #222;
+    color: #fff;
+ }
+
+.buttons .delete{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #f44336;
+ }
+
+ .buttons .delete:hover{
+    background-color: #f44336;
+    color: #fff;
+ }
+
+ .buttons .logout{
+    border: 2px solid #fe424d
+ }
+
+ .buttons .logout:hover{
+    background-color: #fe424d;
+    color: #fff;
+ }
+
+ .profile-page-container2 .info-about-user p{
+    font-size: 1.2rem;
+    color: #564c4d;
+ }
+
+ @media screen and (max-width:1175px){
+    
+ }
+
+
+
+
+
+
+
+ */
+
+.profile-page {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    gap: 50px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.profile-page-container1 {
+    border: 0.3px solid #d7d5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.img-container {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+.img-container .user-name-letter {
+    width: 100%;
+    background-color: cadetblue;
+    height: 100%;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name-letter p {
+    font-size: 9rem;
+    margin: 0;
+}
+
+.img-container .user-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.verified-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verified-info p {
+    font-size: 23px;
+    font-weight: 500;
+    color: darkcyan;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.verified-info p i {
+    color: darkcyan;
+}
+
+.verified-info .dropdown-btn {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+    cursor: pointer;
+}
+
+.verified-info .dropdown-btn i {
+    color: darkcyan;
+}
+
+.docs-info-dropdown h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdown-docs-list li {
+    padding: 5px 0;
+}
+
+.dropdown-docs-list li i {
+    color: darkcyan;
+    margin-right: 5px;
+}
+
+.account-info .docs-info {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #222;
+}
+
+.docs-info .docs-list {
+    padding: 15px 0;
+}
+
+.docs-list li {
+    font-size: 18px;
+    color: #222;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.docs-list li i {
+    color: darkcyan;
+    margin-right: 5px;
+}
+
+.profile-page-container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-info h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.about-info p {
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.profile-page-container2 .info-about-user {
+    margin-top: 40px;
+}
+
+.info-about-user p {
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    color: #564c4d;
+}
+
+.profile-page-container2 .buttons {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 8px 0;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons .edit {
+    border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: 2px solid #222;
+}
+
+.buttons .edit:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.buttons .delete {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #f44336;
+}
+
+.buttons .delete:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.buttons .logout {
+    border: 2px solid #fe424d;
+}
+
+.buttons .logout:hover {
+    background-color: #fe424d;
+    color: #fff;
+}
+
+@media screen and (max-width: 1175px) {
+    .profile-page {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-page-container1,
+    .profile-page-container2 {
+        margin: 0 20px;
+        gap: 15px;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons button {
+        margin-bottom: 10px;
+    }
+
+    .verified-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .docs-info h4{
+        display: none;
+    }
+
+    .docs-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .account-info .docs-info {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .docs-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .account-info .docs-info {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-name-letter p {
+        font-size: 7rem;
+    }
+
+    .about-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-info p,
+    .profile-page-container2 .info-about-user p {
+        font-size: 1rem;
+    }
+
+    .profile-page-container2 .info-about-user{
+        margin-top: 20px;
+    }
+
+    .profile-page-container2 .buttons{
+        margin: 25px 0;
+    }
+
+    .buttons button {
+        font-size: 14px;
+    }
+
+    .account-info .docs-info {
+        display: none;
+    }
+
+    .account-info .docs-info-dropdown {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .profile-page-container1 {
+        gap: 20px;
+    }
+
+    .verified-info p {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    .verified-info .dropdown-btn {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .img-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .user-name-letter p {
+        font-size: 5rem;
+    }
+
+    .about-info h2 {
+        font-size: 2rem;
+    }
+
+    .profile-page-container2 .info-about-user{
+        margin-top: 10px;
+    }
+
+    .profile-page-container2 .buttons{
+        margin: 20px 0;
+    }
+
+    .buttons button {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,26 @@
+.chat-list {
+    flex: 1;
+}
+
+.chat-list .chat-list-heading {
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fe565f;
+    color: #fff;
+}
+
+@media screen and (max-width:1075px){
+    .chat-list-heading h3{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:876px){
+    .chat-list{
+        display: none;
+    }
+}
+
+
+

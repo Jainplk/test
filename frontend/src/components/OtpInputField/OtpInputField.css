@@ -1,0 +1,72 @@
+.otp-input-field-content{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 2px rgba(213, 154, 154, 0.674),0 4px 12px rgba(222, 161, 161, 0.893);
+    padding: 40px 50px;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center
+}
+
+.otp-input-field-content h2{
+    color:#222;
+}
+
+.otp-input-field-content p{
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.otp-input-field{
+    margin: 5px 25px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.otp-input-field input{
+    width: 35px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+    outline: none;
+    text-align: center;
+}
+
+.otp-input-field input[type='text']:focus{
+    border: 3px solid #53525243;
+}
+
+.otp-input-field-content .otp-submit-btn{
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fe424d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px){
+    .otp-input-field-content{
+        padding: 30px 32px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .otp-input-field-content{
+        padding: 30px 30px;
+    }
+
+    .otp-input-field-content .otp-submit-btn{
+        width: 60%;
+    }
+
+    .otp-input-field-content form{
+        text-align: center;
+    }
+}

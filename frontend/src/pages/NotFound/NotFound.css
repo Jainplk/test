@@ -1,0 +1,95 @@
+.not-found{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.err-content{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.error-msg h1{
+    font-size: 145px;
+    color: #484848;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.error-msg p{
+    color: #484848;
+    font-size: 35px;
+    margin: 25px 0 15px 0;
+}
+
+.link-code h3{
+    font-size: 25px;
+    color: #484848;
+}
+
+.link-code p{
+    margin: 15px 0 15px 0;
+    color: #484848;
+    font-size: 18px;
+}
+
+.link-code p span{
+    color: #008489;
+    font-weight: 500;
+}
+
+
+.error-cartoon img{
+   max-width: 500px;
+}
+
+@media screen and (max-width:1024px){
+    .error-cartoon img{
+        max-width: 400px;
+     }
+}
+
+@media screen and (max-width:900px){
+    .not-found{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .error-cartoon img{
+        max-width: 300px;
+     }
+
+     .error-msg p br{
+        visibility: hidden;
+    }
+
+    .error-msg, .link-code{
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width:576px){
+    .error-msg h1{
+        font-size: 120px;
+    }
+
+    .error-msg p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .error-msg h1{
+        font-size: 100px;
+    }
+
+    .error-msg p{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,146 @@
+.show-listing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.listing-title-img h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.listing-title-img img{
+    width: 100%;
+    height: 380px;
+    background-size: contain;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+}
+
+.listing-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listing-content h3{
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.listing-content p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #222;
+    margin-top: 16px;
+}
+
+.btns button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    letter-spacing: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#fe424d;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btns button i{
+    color:#fe424d;
+}
+
+.btns button:hover{
+    box-shadow: 0 1px 12px #fe424d,0 4px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1124px){
+    .btns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px
+    }
+
+    .btns button{
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:875px){
+    .show-listing{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .listing-content{
+        gap: 0px;
+    }
+
+    .listing-content h3{
+        margin-top: 15px;
+    }
+
+    .btns button{
+        letter-spacing: 5px;
+        width: 100%;
+    }
+    
+    .listing-title-img img{
+       max-width: 100%;
+       height: 330px;
+       background-size:contain ;
+    }
+}
+
+@media screen and (max-width:576px){
+    .show-listing{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    .btns button{
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:465px){
+    .listing-title-img h2{
+        font-size: 1.8rem;
+    }
+
+    .listing-content h3{
+        font-size: 1.4rem;
+    }
+
+    .listing-content p{
+        font-size: 1rem;
+    }
+
+    .btns button{
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    .btns{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .listing-title-img img{
+        max-width: 100%;
+        height: auto;
+        background-size:contain ;
+     }
+}
+

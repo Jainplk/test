@@ -1,0 +1,106 @@
+  /* form styling */
+  .review-popup{
+    position: fixed;
+    inset: 0;
+    background-color:rgba(0,0,0,0.5) ;
+    backdrop-filter: blur(2px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:auto;
+    z-index: 100;
+  }
+  
+  .review-popup-card{
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    width: auto;
+    padding: 40px 30px; 
+
+  }
+
+  .review-popup-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  .review-popup-heading h3{
+    font-size: 1.4rem;
+    color: #2a2a2a;
+    letter-spacing: 0.7px;
+  }
+
+  .review-popup-heading button{
+      padding: 3px 6px;
+      border-radius: 25px;
+      border: 3px solid #fe424d;
+      background-color: #fff;
+      cursor: pointer;
+      transition: transform 1s;
+      font-size: 12px;
+      font-weight: 500;
+      color: #787474;
+      opacity: 0.5;
+  }
+
+  .review-popup-heading button:hover{
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  .review-popup .feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .review-popup .feedback label{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+ .feedback-btn{
+    padding: 10px 15px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+ } 
+
+ .feedback-btn:hover{
+  background-color: black;
+ }
+
+ @media screen and (max-width:576px){
+  .review-popup-card{
+    padding: 30px 30px; 
+  }
+
+  .review-popup-heading h3{
+    font-size: 1.2rem;
+  }
+
+  .review-popup-heading{
+    gap: 40px;
+  }
+
+  .review-popup .feedback label{
+    font-size: 1rem;
+  }
+
+  .feedback-btn{
+    padding: 8px 12px;
+    font-size: 0.8rem;
+ } 
+ }

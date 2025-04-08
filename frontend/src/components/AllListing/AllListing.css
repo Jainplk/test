@@ -1,0 +1,77 @@
+.listings{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 22px;
+    justify-content: center;
+    row-gap: 35px;
+}
+
+.listings-img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+
+.listings-img img:hover{
+   opacity: 0.65;
+}
+
+.listings-price-loaction{
+    padding: 5px 0 0 2px;
+}
+
+.listings-price-loaction .location{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.listings-price-loaction .price span{
+    font-weight: 300;
+}
+
+.no-result-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.no-result-found .no-result-found-msg{
+    font-size: 33px;
+    font-weight: 600;
+    margin-top: 50px;
+    letter-spacing: 1.5px;
+    color: #222;
+}
+
+.no-result-found-msg span{
+    color: #fe424d;
+    cursor: pointer;
+}
+
+.no-result-found .no-result-found-option{
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #222;
+}
+
+.no-result-found ul{
+    display: flex;
+    gap: 10px;
+}
+
+.no-result-found ul li button{
+    padding: 6px 16px;
+    background-color: #fe424d;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

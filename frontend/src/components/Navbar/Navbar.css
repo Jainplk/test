@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container{
+    width: 100%;
+    background-color: #fff;
+    height: 6rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.navbar-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 12px;
+    background-color: #fff;
+    height: 4.5rem;
+}
+
+.navbar-logo{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.navbar-logo i{
+    color: #fe424d;
+    font-size: 1.8rem;
+}
+
+.navbar-logo p{
+    color: #fe424d;
+    font-size: 2rem;
+    font-family: Josefin Sans;
+    font-weight: 700;
+}
+
+.navbar-search-bar{
+    border: 1px solid #dddddd;
+    padding: 6px 15px 6px 15px;
+    border-radius: 25px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+}
+
+.navbar-search-bar input{
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+}
+
+.navbar-search-bar button{
+    padding: 12px 14px;
+    background-color: #fe424d;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-search-bar button i{
+    color: #ebebeb;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-right-list{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.navbar-right-list li, i{
+    font-size: 18px;
+    color: #222222;
+}
+
+.navbar-right-list li{
+    padding: 8px;
+}
+
+.nav-user-content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    padding: 8px 16px;
+    border-radius: 26px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.nav-user-content .user-profile-img{
+    border-radius: 50%;
+    width: 37.5px;
+    height: 36px;
+    background-color: transparent;
+}
+
+.nav-user-content .user-profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nav-user-content .user-profile{
+    background-color: cadetblue;
+    padding: 8px 14px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 37.5px;
+    height: 36px;
+}
+
+.nav-user-content .guest-profile i{
+    font-size: 30px;
+}
+
+.user-content-list{
+    position: absolute;
+    width: 160px;
+    top: 60px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    color: #222222;
+    box-shadow: 0 0px 15px rgba(1, 1, 1, 0.229);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 0 15px 0;
+    z-index: 100;
+}
+
+.user-content-list ul{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 8px 15px; 
+}
+
+.user-content-list ul li{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-content-list ul li:hover{
+    color: #fe424d;
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+.nav-user-content:hover{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05);
+}
+
+.navbar-right-list li:hover{
+    background-color: #ebebeb;
+    border-radius: 25px;
+}
+
+.dropped-searchBar{
+    display: none;
+}
+
+@media screen and (max-width:1042px) {
+    .navbar-search-bar{
+        display: none;
+    }
+
+    .dropped-searchBar{
+        display: block;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+       
+
+        .navbar-search-bar{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:775px){
+    .navbar-right-list .nav-list-1{
+        display: none;
+    }
+
+    .user-content-list{
+        position: absolute;
+        right: 25px;
+    }
+
+    .nav-user-content{
+        padding: 6px 14px;
+    }
+
+    .navbar-content{
+        width: 98%;
+        margin:  auto;
+    }
+
+    .navbar-logo i{
+        font-size: 1.6rem;
+    }
+    
+    .navbar-logo p{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    
+}
+
+@media screen and (max-width:465px){
+    .navbar-right-list li{
+        display: none;
+    }
+
+    .user-content-list{
+        position: absolute;
+        right: 10px;
+    }
+
+    .navbar-search-bar input{
+        padding: 5px;
+    }
+    
+    .navbar-search-bar button{
+        padding: 8px 10px;
+        background-color: #fe424d;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,130 @@
+.chat-list-user-section{
+    border-bottom: 1px solid rgb(219, 203, 203);
+}
+
+.chat-list-heading h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 15px 18px;
+}
+
+.list-container .trash-icon i{
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.list-container .trash-icon i:hover{
+    color: red;
+}
+
+.active-chat{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+    .guest-user-name-img .guest-name{
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+.guest-user-info{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+.guest-user-name-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.guest-user-img img{
+    width:  100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.guest-user-name-img .guest-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+.guest-user-img{
+    color: white;
+    background-color: cadetblue;
+    border-radius:50% ;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.guest-user-img p{
+    padding: 3px;
+    font-size: 22px;
+}
+
+.msg-time{
+   color: gray;
+   font-weight: 600;
+}
+
+.no-chats{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.no-chats p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chat-list-user-section:hover{
+    box-shadow: 0 1px 4px rgb(219, 203, 203);
+}
+
+
+@media screen and (max-width: 975px){
+    .msg-time{
+        color: gray;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+     .guest-user-img{
+        width: 32px;
+        height: 32px;
+    }
+
+     .guest-user-name-img p{
+        font-size: 18px;
+    }
+
+    .guest-user-name-img{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+} 
+
+@media screen and (max-width:876px){
+    .chat-list-user-section{
+        border-bottom: none;
+    }
+}

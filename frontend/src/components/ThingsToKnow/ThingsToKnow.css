@@ -1,0 +1,48 @@
+.things-to-know{
+    padding: 40px 0;
+}
+
+.things-to-know h2{
+    font-size: 26px;
+    font-weight: 400;
+    color: #222;
+}
+
+.things-to-know .things-to-know-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.things-to-know-options h3{
+    font-size: 22px;
+    color: #222;
+    font-weight: 500;
+}
+
+.things-to-know-options ul{
+    margin-top: 10px;
+}
+
+.things-to-know-options ul li{
+    padding: 5px 0;
+}
+
+@media screen and (max-width:800px){
+    .things-to-know .things-to-know-options{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .things-to-know-options .safety-property, .cancellation-policy{
+        border-top: 1px solid #ddd;
+    }
+
+    .things-to-know-options h3{
+        margin-top: 10px
+    }
+    
+    
+}

@@ -1,0 +1,14 @@
+.chats{
+    display: flex;
+    border: 1px solid #222;
+    border-radius: 5px;
+    height: 80vh;
+    margin: 20px auto;
+    width: 90%;
+}
+
+@media screen and (max-width:800px){
+    .chats{
+        width: 100%;
+    }
+}

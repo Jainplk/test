@@ -48,7 +48,7 @@ module.exports.register = async(req, res) => {
 
 // Login function
 module.exports.login = async(req, res) => {
-    const {email, password} = req.body;
+        const {email, password} = req.body;
 
     if(!email || !password){
         return res.json({success: false, message: 'Email and Password are required!'})

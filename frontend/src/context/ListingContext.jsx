@@ -414,7 +414,7 @@ export const ListingsProvider = ({ children }) => {
   useEffect(() => {
     const getAuthState = async () => {
       try {
-        const { data } = await axios.get(URL + "/auth/is-auth");
+        const { data } = await axios.get(URL + "/auth/is-auth", {withCredentials: true});
         if (data.success) {
           setIsLoggedIn(true);
         } else {

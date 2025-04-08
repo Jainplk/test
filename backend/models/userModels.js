@@ -25,7 +25,7 @@ const userSchema = new Schema({
   },
   about: {
     type: String,
-    default: "Excited to be part of StayEasy!",
+    default: "Hi! I'm a passionate traveler and explorer who loves discovering new places, trying different cuisines, and meeting amazing people. Always learning, growing, and chasing adventures. Let's connect and explore!",
   },
   profileImg: {
     url: {

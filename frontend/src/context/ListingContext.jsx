@@ -159,6 +159,7 @@ export const ListingsProvider = ({ children }) => {
   const handleSearchBar = async (query) => {
     if (query.trim() === "") {
       setFilteredListing(listings);
+      setNoSearchResult(false)
       return;
     }
 
@@ -167,6 +168,7 @@ export const ListingsProvider = ({ children }) => {
     );
 
     if (filtered.length === 0) {
+      setFilteredListing([])
       setNoSearchResult(true)
     } else {
       setNoSearchResult(false)
@@ -181,7 +183,8 @@ export const ListingsProvider = ({ children }) => {
     try {
       const response = await axios.get(URL + `/listings`); // Fetch all listings
       setListings(response.data);
-      setFilteredListing(response.data)
+      setFilteredListing(response.data);
+    setNoSearchResult(false)
     } catch (error) {
       console.error("Error fetching all listings:", error);
     }

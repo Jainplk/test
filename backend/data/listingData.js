@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+const ObjectId = mongoose.Types.ObjectId
+
 const listingData = [
     {
       title: "Cozy Beachfront Cottage",
@@ -10,6 +13,7 @@ const listingData = [
       price: 1500,
       location: "Malibu",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d15f')
     },
     {
       title: "Modern Loft in Downtown",
@@ -22,6 +26,7 @@ const listingData = [
       price: 1200,
       location: "New York City",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d15f')
     },
     {
       title: "Mountain Retreat",
@@ -34,6 +39,7 @@ const listingData = [
       price: 1000,
       location: "Aspen",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d160')
     },
     {
       title: "Historic Villa in Tuscany",
@@ -46,6 +52,7 @@ const listingData = [
       price: 2500,
       location: "Florence",
       country: "Italy",
+      owner: new ObjectId('67f5780d768f9cd91e83d160')
     },
     {
       title: "Secluded Treehouse Getaway",
@@ -58,6 +65,7 @@ const listingData = [
       price: 800,
       location: "Portland",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d161')
     },
     {
       title: "Beachfront Paradise",
@@ -70,6 +78,7 @@ const listingData = [
       price: 2000,
       location: "Cancun",
       country: "Mexico",
+      owner: new ObjectId('67f5780d768f9cd91e83d161')
     },
     {
       title: "Rustic Cabin by the Lake",
@@ -82,6 +91,7 @@ const listingData = [
       price: 900,
       location: "Lake Tahoe",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d162')
     },
     {
       title: "Luxury Penthouse with City Views",
@@ -94,6 +104,7 @@ const listingData = [
       price: 3500,
       location: "Los Angeles",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d162')
     },
     {
       title: "Ski-In/Ski-Out Chalet",
@@ -106,6 +117,7 @@ const listingData = [
       price: 3000,
       location: "Verbier",
       country: "Switzerland",
+      owner: new ObjectId('67f5780d768f9cd91e83d163')
     },
     {
       title: "Safari Lodge in the Serengeti",
@@ -118,6 +130,7 @@ const listingData = [
       price: 4000,
       location: "Serengeti National Park",
       country: "Tanzania",
+      owner: new ObjectId('67f5780d768f9cd91e83d163')
     },
     {
       title: "Historic Canal House",
@@ -130,6 +143,7 @@ const listingData = [
       price: 1800,
       location: "Amsterdam",
       country: "Netherlands",
+      owner: new ObjectId('67f5780d768f9cd91e83d164')
     },
     {
       title: "Private Island Retreat",
@@ -142,6 +156,7 @@ const listingData = [
       price: 10000,
       location: "Fiji",
       country: "Fiji",
+      owner: new ObjectId('67f5780d768f9cd91e83d164')
     },
     {
       title: "Charming Cottage in the Cotswolds",
@@ -154,6 +169,7 @@ const listingData = [
       price: 1200,
       location: "Cotswolds",
       country: "United Kingdom",
+      owner: new ObjectId('67f5780d768f9cd91e83d165')
     },
     {
       title: "Historic Brownstone in Boston",
@@ -166,6 +182,7 @@ const listingData = [
       price: 2200,
       location: "Boston",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d165')
     },
     {
       title: "Beachfront Bungalow in Bali",
@@ -178,6 +195,7 @@ const listingData = [
       price: 1800,
       location: "Bali",
       country: "Indonesia",
+      owner: new ObjectId('67f5780d768f9cd91e83d166')
     },
     {
       title: "Mountain View Cabin in Banff",
@@ -190,6 +208,7 @@ const listingData = [
       price: 1500,
       location: "Banff",
       country: "Canada",
+      owner: new ObjectId('67f5780d768f9cd91e83d166')
     },
     {
       title: "Art Deco Apartment in Miami",
@@ -202,6 +221,7 @@ const listingData = [
       price: 1600,
       location: "Miami",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d167')
     },
     {
       title: "Tropical Villa in Phuket",
@@ -214,6 +234,7 @@ const listingData = [
       price: 3000,
       location: "Phuket",
       country: "Thailand",
+      owner: new ObjectId('67f5780d768f9cd91e83d167')
     },
     {
       title: "Historic Castle in Scotland",
@@ -226,6 +247,7 @@ const listingData = [
       price: 4000,
       location: "Scottish Highlands",
       country: "United Kingdom",
+      owner: new ObjectId('67f5780d768f9cd91e83d168')
     },
     {
       title: "Desert Oasis in Dubai",
@@ -238,6 +260,7 @@ const listingData = [
       price: 5000,
       location: "Dubai",
       country: "United Arab Emirates",
+      owner: new ObjectId('67f5780d768f9cd91e83d168')
     },
     {
       title: "Rustic Log Cabin in Montana",
@@ -250,6 +273,7 @@ const listingData = [
       price: 1100,
       location: "Montana",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d169')
     },
     {
       title: "Beachfront Villa in Greece",
@@ -262,6 +286,7 @@ const listingData = [
       price: 2500,
       location: "Mykonos",
       country: "Greece",
+      owner: new ObjectId('67f5780d768f9cd91e83d169')
     },
     {
       title: "Eco-Friendly Treehouse Retreat",
@@ -274,6 +299,7 @@ const listingData = [
       price: 750,
       location: "Costa Rica",
       country: "Costa Rica",
+      owner: new ObjectId('67f5780d768f9cd91e83d16a')
     },
     {
       title: "Historic Cottage in Charleston",
@@ -286,6 +312,7 @@ const listingData = [
       price: 1600,
       location: "Charleston",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d16a')
     },
     {
       title: "Modern Apartment in Tokyo",
@@ -298,6 +325,7 @@ const listingData = [
       price: 2000,
       location: "Tokyo",
       country: "Japan",
+      owner: new ObjectId('67f5780d768f9cd91e83d16b')
     },
     {
       title: "Lakefront Cabin in New Hampshire",
@@ -310,6 +338,7 @@ const listingData = [
       price: 1200,
       location: "New Hampshire",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d16b')
     },
     {
       title: "Luxury Villa in the Maldives",
@@ -322,6 +351,7 @@ const listingData = [
       price: 6000,
       location: "Maldives",
       country: "Maldives",
+      owner: new ObjectId('67f5780d768f9cd91e83d16c')
     },
     {
       title: "Ski Chalet in Aspen",
@@ -334,6 +364,7 @@ const listingData = [
       price: 4000,
       location: "Aspen",
       country: "United States",
+      owner: new ObjectId('67f5780d768f9cd91e83d16c')
     },
     {
       title: "Secluded Beach House in Costa Rica",
@@ -346,6 +377,7 @@ const listingData = [
       price: 1800,
       location: "Costa Rica",
       country: "Costa Rica",
+      owner: new ObjectId('67f5780d768f9cd91e83d16d')
     },
   ];
 

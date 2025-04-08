@@ -35,8 +35,8 @@ const AllListing = () => {
           <p className='no-result-found-msg'>No listings found for the entered country. <span onClick={handleLogoClick}>Go to Home</span></p>
           <p className='no-result-found-option'>Try searching for:</p>
           <ul>
-            <li><button onClick={() => handleSearchBar('Italy')}>India</button></li>
-            <li><button onClick={() => handleSearchBar('United States')}>USA</button></li>
+            <li><button onClick={() => handleSearchBar('Italy')}>Italy</button></li>
+            <li><button onClick={() => handleSearchBar('United States')}>United States</button></li>
             <li><button onClick={() => handleSearchBar('Thailand')}>Thailand</button></li>
           </ul>
         </div>

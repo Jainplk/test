@@ -7,7 +7,6 @@ const ProtectedRoute = ({children}) => {
     const token = localStorage.getItem("token")
         
     if(!token){
-        console.log("protected route", token)
             return <Navigate to='/login' state={{from: location.pathname}} replace/>
     }
 

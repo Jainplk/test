@@ -26,7 +26,7 @@ const NotFound = () => {
       </div>
 
       <div className="error-cartoon">
-        <img src="/src/assets/404.jpg" alt="404-img" />
+        <img src="/404.jpg" alt="404-img" />
       </div>
 
     </div>

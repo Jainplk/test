@@ -17,36 +17,32 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
-// const initData = async () => {
-//   try {
-//     await Listing.deleteMany({}); // Clear existing data
-//     await Listing.insertMany(listingData); // Insert sample data
-//     console.log('Initialized Data Successfully');
-//   } catch (error) {
-//     console.error('Error importing data:', error);
-//   }
-// };
-
 const initData = async () => {
   try {
     await Listing.deleteMany({}); // Clear existing data
     await Listing.insertMany(listingData); // Insert sample data
-    console.log("Initialized Data Successfully");
-
-    const hashedUsers = await Promise.all(
-      userData.map(async (user) => {
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(user.password, salt);
-        return { ...user, password: hashedPassword };
-      })
-    );
-
-    await User.deleteMany({}); // Clear existing data
-    await User.insertMany(hashedUsers); // Insert sample data
-    console.log("Initialized Data Successfully");
+    console.log('Initialized Data Successfully');
   } catch (error) {
-    console.error("Error importing data:", error);
+    console.error('Error importing data:', error);
   }
 };
+
+// const initData = async () => {
+//   try {
+//     const hashedUsers = await Promise.all(
+//       userData.map(async (user) => {
+//         const salt = await bcrypt.genSalt(10);
+//         const hashedPassword = await bcrypt.hash(user.password, salt);
+//         return { ...user, password: hashedPassword };
+//       })
+//     );
+
+//     await User.deleteMany({}); // Clear existing data
+//     await User.insertMany(hashedUsers); // Insert sample data
+//     console.log("Initialized Data Successfully");
+//   } catch (error) {
+//     console.error("Error importing data:", error);
+//   }
+// };
 
 initData();
